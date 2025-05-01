@@ -1,0 +1,202 @@
+.client-form {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .client-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .client-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .client-form label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .client-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-row > div {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cancel-button,
+  .save-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .save-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .save-button:hover {
+    background-color: #218838;
+  }
+  
+  .notification {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .client-form {
+      padding: 15px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .form-row > div {
+      min-width: 100%;
+    }
+  
+    .client-form h2 {
+      font-size: 20px;
+    }
+  
+    .client-form label {
+      font-size: 14px;
+    }
+  
+    .client-form input {
+      font-size: 14px;
+    }
+  
+    .back-button,
+    .cancel-button,
+    .save-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .notification {
+      font-size: 14px;
+    }
+  
+    .error-message {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .client-form {
+      padding: 10px;
+    }
+  
+    .form-row {
+      gap: 10px;
+    }
+  
+    .client-form h2 {
+      font-size: 18px;
+    }
+  
+    .client-form label {
+      font-size: 13px;
+    }
+  
+    .client-form input {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .back-button,
+    .cancel-button,
+    .save-button {
+      font-size: 13px;
+      padding: 6px 12px;
+    }
+  
+    .form-actions {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .notification {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }

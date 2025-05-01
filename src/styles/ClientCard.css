@@ -1,0 +1,72 @@
+.client-card {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    position: relative;
+  }
+  
+  .client-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .client-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  .client-card p {
+    margin: 5px 0;
+  }
+  
+  .profile-link-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile-link:hover {
+    text-decoration: underline;
+  }
+  
+  .copy-button, .edit-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .copy-button {
+    background-color: #f1f1f1;
+  }
+  
+  .edit-button {
+    background-color: #ffc107;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .copy-alert {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    .client-card {
+      padding: 15px;
+    }
+  }

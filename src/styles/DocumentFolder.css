@@ -1,0 +1,77 @@
+.document-folder {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .folder-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .folder-header h3 {
+    margin: 0;
+  }
+  
+  .document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .new-label {
+    background-color: #28a745;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+  }
+  
+  .document-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .preview-button, .download-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .preview-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .preview-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .download-button:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 768px) {
+    .document-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
